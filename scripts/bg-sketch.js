@@ -1,4 +1,5 @@
 let canvas;
+let posX = 100, posY = 100;
 
 function setup(){
     canvas = createCanvas(windowWidth, windowHeight);
@@ -8,6 +9,7 @@ function setup(){
 
 function draw(){
     background(170);
+    ellipse(posX, posY, 100, 100);
 }
 
 function windowResized(){
@@ -15,9 +17,6 @@ function windowResized(){
 }
 
 function mouseDragged(){
-    ellipse(mouseX, mouseY, 100, 100);
-}
-
-function touchMoved(){
-    ellipse(mouseX, mouseY, 100, 100);
+    posX = mouseX;
+    posY = mouseY;
 }
