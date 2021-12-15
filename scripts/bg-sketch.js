@@ -2,7 +2,7 @@ let canvas;
 let posX = 100, posY = 100;
 
 function setup(){
-    canvas = createCanvas(windowWidth, windowHeight);
+    canvas = createCanvas(windowWidth, windowHeight);   //mudar para displayWidth e height?
     canvas.position(0, 0);
     canvas.style("z-index", "-1");
 }
