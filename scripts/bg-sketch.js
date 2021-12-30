@@ -1,6 +1,11 @@
 //rotationX = eixo horizontal
 //rotationY = eixo vertical
-//rotationZ = eixo profundidade - rotação que interessa
+//rotationZ = eixo profundidade - rotação que interessa (posisitivo é topo para a esquerda)
+//accelerationX = esquerda direita (positivo é direita para a esquerda)
+//accelerationY = frente trás (positivo é frente para trás)
+//accelerationZ = cima baixo (positivo é cima para baixo)
+//ideia de completar o labirinto através do movimento com o accelerometro
+//"MOVE through the labyrinth to unlock"
 
 let canvas;
 let posX = 100, posY = 100;
@@ -13,11 +18,12 @@ function setup(){
 
 function draw(){
     background(170);
+    if(accelerationX > 1){
+        posX -= accelerationX;
+    } else if(accelerationX < 1){
+        posX += accelerationX;
+    }
     ellipse(posX, posY, 100, 100);
-    text(String(accelerationX), 100, 500);
-    text(String(accelerationY), 100, 550);
-    text(String(accelerationZ), 100, 600);
-    text("a", 100, 650);
 }
 
 function windowResized(){
