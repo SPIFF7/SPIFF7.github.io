@@ -1,3 +1,7 @@
+//rotationX = eixo horizontal
+//rotationY = eixo vertical
+//rotationZ = eixo profundidade - rotação que interessa
+
 let canvas;
 let posX = 100, posY = 100;
 
@@ -10,9 +14,9 @@ function setup(){
 function draw(){
     background(170);
     ellipse(posX, posY, 100, 100);
-    text(String(rotationX), 100, 500);
-    text(String(rotationY), 100, 550);
-    text(String(rotationZ), 100, 600);
+    text(String(accelerationX), 100, 500);
+    text(String(accelerationY), 100, 550);
+    text(String(accelerationZ), 100, 600);
 }
 
 function windowResized(){
