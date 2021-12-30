@@ -10,6 +10,9 @@ function setup(){
 function draw(){
     background(170);
     ellipse(posX, posY, 100, 100);
+    text(String(rotationX), 100, 500);
+    text(String(rotationY), 100, 550);
+    text(String(rotationZ), 100, 600);
 }
 
 function windowResized(){
