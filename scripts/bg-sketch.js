@@ -19,9 +19,9 @@ function setup(){
 function draw(){
     background(170);
     if(accelerationX > 1){
-        posX -= accelerationX;
+        posX -= abs(accelerationX);
     } else if(accelerationX < 1){
-        posX += accelerationX;
+        posX += abs(accelerationX);
     }
     ellipse(posX, posY, 100, 100);
 }
