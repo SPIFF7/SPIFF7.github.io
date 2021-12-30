@@ -17,6 +17,7 @@ function draw(){
     text(String(accelerationX), 100, 500);
     text(String(accelerationY), 100, 550);
     text(String(accelerationZ), 100, 600);
+    text("a", 100, 650);
 }
 
 function windowResized(){
