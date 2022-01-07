@@ -46,7 +46,7 @@ body {
 #socials{
     background-color: black;
     color: white;
-    padding-left: 10px;
+    padding-left: 0;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -68,14 +68,14 @@ body {
 }
 
 #socialLinks a img {
-    width: 500px;
+    width: 50%;
     transition: 0.5s;
 }
 
 #contacts{
     background-color: black;
     color: white;
-    padding-left: 10px;
+    padding-left: 0;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -108,7 +108,7 @@ body {
 }
 
 /*mobile*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px), only screen and (max-height: 884px){
     #greet{
         padding-left: 2px;
         font-size: 40px;
@@ -140,5 +140,77 @@ body {
 
     #discordIcon {
         width: 100px;
+    }
+}
+
+/*tablet*/
+@media only screen and (min-width: 769px) and (max-width: 992px), only screen and (min-height: 885px) and (max-height: 924px) {
+    #greet{
+        padding-left: 4px;
+        font-size: 55px;
+    }
+
+    #hi {
+        font-size: 200px;
+    }
+
+    #socials{
+        padding-left: 2px;
+    }
+
+    #socialLinks {
+        grid-gap: 2px;
+    }
+
+    #contacts{
+        padding-left: 2px;
+    }
+
+    #contactLinks {
+        grid-gap: 2px;
+    }
+
+    #emailIcon {
+        width: 225px;
+    }
+
+    #discordIcon {
+        width: 225px;
+    }
+}
+
+/*small computers*/
+@media only screen and (min-width: 993px) and (max-width: 1279px){
+    #greet{
+        padding-left: 6px;
+        font-size: 60px;
+    }
+
+    #hi {
+        font-size: 225px;
+    }
+
+    #socials{
+        padding-left: 2px;
+    }
+
+    #socialLinks {
+        grid-gap: 5px;
+    }
+
+    #contacts{
+        padding-left: 2px;
+    }
+
+    #contactLinks {
+        grid-gap: 5px;
+    }
+
+    #emailIcon {
+        width: 275px;
+    }
+
+    #discordIcon {
+        width: 275px;
     }
 }
