@@ -18,12 +18,12 @@ function setup(){
 
 function draw(){
     background(170);
-    if(accelerationX > 1){
+    if(accelerationX > 3){
         posX += accelerationX;
-    } else if(accelerationX < 1){
+    } else if(accelerationX < 3){
         posX += accelerationX;
     }
-    fill(255,0,0);
+    fill(0,255,0);
     ellipse(posX, posY, 100, 100);
 }
 
