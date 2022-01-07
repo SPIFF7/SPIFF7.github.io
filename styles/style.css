@@ -1,11 +1,16 @@
-body {
+html, body{
+    height: 100%;
     margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #greet{
     background-color: black;
-    padding: 50px 10px;
+    padding-left: 10px;
     color: white;
     text-align: left;
     font-size: 70px;
@@ -17,19 +22,79 @@ body {
     transition: 0.5s;
 }
 
-#greet p{
+#greetContent{
+    position: absolute;
+    bottom: 0;
+}
+
+#greetContent p{
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
-#contacts{
-    background-color: green;
+#greetContent a:link, #greetContent a:visited, #greetContent a:hover, #greetContent a:active {
     color: white;
-    padding: 50px 10px;
-    text-align: left;
+}
+
+#socials{
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    text-align: center;
     position: fixed;
     width: 100%;
     height: 0%;
     transition: 0.5s;
     visibility: hidden;
+}
+
+#socials p{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#socialLinks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    transition: 0.5s;
+}
+
+#socialLinks a img {
+    width: 500px;
+    transition: 0.5s;
+}
+
+#contacts{
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 0%;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+#contacts p{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#contactLinks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+#emailIcon {
+    width: 250px;
+    transition: 0.5s;
+}
+
+#discordIcon {
+    width: 215px;
 }
