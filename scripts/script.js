@@ -3,11 +3,10 @@ window.onbeforeunload = function () {
 }
 
 let startingHeight = window.innerHeight;
-let startingWidth = window.innerWidth;
 document.body.style.height = startingHeight*2 + "px";
 
 window.onscroll = function (){
-    if(startingWidth > 768){
+    if(window.innerWidth > 768){
         pageScrollDesktop();
     } else {
         pageScrollMobile();
