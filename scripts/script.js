@@ -14,6 +14,7 @@ window.onscroll = function (){
 function pageScroll(){
     if (document.documentElement.scrollTop < 400) {
         //#greet zooms in
+        document.getElementById("hi").style.fontSize = "250px";
         document.getElementById("greet").style.fontSize = "70px";
         document.getElementById("greet").style.height = "100%";
         document.getElementById("socials").style.top = "100%";
@@ -22,6 +23,7 @@ function pageScroll(){
         document.getElementById("contacts").style.height = "0%";
     } else if(document.documentElement.scrollTop > 400 && document.documentElement.scrollTop < 800){
         //#socials zooms in
+        document.getElementById("hi").style.fontSize = "30px";
         document.getElementById("greet").style.fontSize = "30px";
         document.getElementById("greet").style.height = "25%";
         document.getElementById("socials").style.fontSize = "50px";
@@ -35,6 +37,7 @@ function pageScroll(){
         document.getElementById("contacts").style.height = "0%";
     } else if(document.documentElement.scrollTop > 800){
         //#contacts zooms in
+        document.getElementById("hi").style.fontSize = "30px";
         document.getElementById("greet").style.fontSize = "30px";
         document.getElementById("greet").style.height = "25%";
         document.getElementById("socials").style.fontSize = "30px";

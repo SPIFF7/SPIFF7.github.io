@@ -2,6 +2,7 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 body {
@@ -34,6 +35,12 @@ body {
 
 #greetContent a:link, #greetContent a:visited, #greetContent a:hover, #greetContent a:active {
     color: white;
+}
+
+#hi {
+    font-size: 250px;
+    margin-bottom: 0 !important;
+    transition: 0.5s;
 }
 
 #socials{
