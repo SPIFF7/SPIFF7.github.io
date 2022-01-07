@@ -19,11 +19,11 @@ function setup(){
 function draw(){
     background(170);
     if(accelerationX > 3){
-        posX += accelerationX;
+        posX -= 1;
     } else if(accelerationX < -3){
-        posX += accelerationX;
+        posX += 1;
     }
-    fill(255,0,0);
+    fill(0,255,0);
     ellipse(posX, posY, 100, 100);
 }
 
