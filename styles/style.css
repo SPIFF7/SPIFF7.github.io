@@ -104,4 +104,41 @@ body {
 
 #discordIcon {
     width: 215px;
+    transition: 0.5s;
+}
+
+/*mobile*/
+@media only screen and (max-width: 768px) {
+    #greet{
+        padding-left: 2px;
+        font-size: 40px;
+    }
+
+    #hi {
+        font-size: 150px;
+    }
+
+    #socials{
+        padding-left: 0px;
+    }
+
+    #socialLinks {
+        grid-gap: 1px;
+    }
+
+    #contacts{
+        padding-left: 0px;
+    }
+
+    #contactLinks {
+        grid-gap: 1px;
+    }
+
+    #emailIcon {
+        width: 100px;
+    }
+
+    #discordIcon {
+        width: 100px;
+    }
 }
