@@ -14,7 +14,7 @@ window.onscroll = function (){
 };
 
 function pageScrollDesktop(){
-    if (document.documentElement.scrollTop < 400) {
+    if (document.documentElement.scrollTop < startingHeight/3) {
         //#greet zooms in
         document.getElementById("hi").style.fontSize = "250px";
         document.getElementById("greet").style.fontSize = "70px";
@@ -23,7 +23,7 @@ function pageScrollDesktop(){
         document.getElementById("socials").style.height = "0%";
         document.getElementById("contacts").style.top = "100%";
         document.getElementById("contacts").style.height = "0%";
-    } else if(document.documentElement.scrollTop > 400 && document.documentElement.scrollTop < 800){
+    } else if(document.documentElement.scrollTop > startingHeight/3 && document.documentElement.scrollTop < (startingHeight/3)*2){
         //#socials zooms in
         document.getElementById("hi").style.fontSize = "30px";
         document.getElementById("greet").style.fontSize = "30px";
@@ -37,7 +37,7 @@ function pageScrollDesktop(){
         document.getElementById("socials").style.visibility = "visible";
         document.getElementById("contacts").style.top = "100%";
         document.getElementById("contacts").style.height = "0%";
-    } else if(document.documentElement.scrollTop > 800){
+    } else if(document.documentElement.scrollTop > (startingHeight/3)*2){
         //#contacts zooms in
         document.getElementById("hi").style.fontSize = "30px";
         document.getElementById("greet").style.fontSize = "30px";
@@ -56,7 +56,7 @@ function pageScrollDesktop(){
 }
 
 function pageScrollMobile(){
-    if (document.documentElement.scrollTop < 400) {
+    if (document.documentElement.scrollTop < startingHeight/3) {
         //#greet zooms in
         document.getElementById("hi").style.fontSize = "150px";
         document.getElementById("greet").style.fontSize = "40px";
@@ -65,7 +65,7 @@ function pageScrollMobile(){
         document.getElementById("socials").style.height = "0%";
         document.getElementById("contacts").style.top = "100%";
         document.getElementById("contacts").style.height = "0%";
-    } else if(document.documentElement.scrollTop > 400){
+    } else if(document.documentElement.scrollTop > startingHeight/3){
         //#socials and #contacts zoom in
         document.getElementById("hi").style.fontSize = "16px";
         document.getElementById("greet").style.fontSize = "16px";
